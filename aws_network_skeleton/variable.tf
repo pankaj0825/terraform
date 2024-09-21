@@ -6,19 +6,19 @@ variable "region" {
 variable "igw" {
   type        = bool
   description = "This variable is used to create IGW"
-  default = true
+  default = false
 }
 
 variable "public_subnet_rt" {
   type        = bool
   description = "This variable is used to create Public Route Table and Public Subnets"
-  default = true
+  default = false
 }
 
 variable "private_subnet_rt" {
   type        = bool
   description = "This variable is used to create Private Route Table and Private Subnets"
-  default = true
+  default = false
 }
 
 variable "nat" {
