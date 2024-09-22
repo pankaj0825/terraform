@@ -23,14 +23,19 @@ variable "instance_name" {
     default = "HelloWorld"
 }
 
-variable "provisioner" {
+variable "copy_script" {
     type = bool
-    default = false
+    default = true
 }
 
 variable "path_pem_file" {
     type = string
-    default = "\\/Users/pankaj/Downloads/mykey.pem"
+    default = "/Users/pankaj/Downloads/mykey.pem"
+}
+
+variable "download_pub_ip_file" {
+  type = bool
+  default = true
 }
 
 variable "sg_name" {
