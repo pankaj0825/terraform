@@ -46,7 +46,7 @@ resource "null_resource" "execute_script" {
 resource "aws_security_group" "port22and80" {
   name = var.sg_name
   description = "Allow only port 22 and 80"
-  vpc_id = data.terraform_remote_state.vpc.outputs.vpc_id
+  vpc_id = data.terraform_remote_state.vpc.outputs.vpc-id
   tags = {
     Name = var.sg_name
   }
